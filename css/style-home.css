@@ -1,0 +1,185 @@
+* {
+  text-decoration: none;
+}
+
+body {
+  font-family: Gill Sans, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* GLOBAL PROPERTIES */
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1 a {
+  font-size: 30px;
+  color: white;
+}
+
+/* HEADER SECTION */
+
+header {
+  background: black;
+  color: white;
+  padding: 10px 0px;
+  min-height: 70px;
+}
+
+#header--navbar a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  display: inline;
+  padding: 0 10px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#logo-title .highlight {
+  color: orange;
+}
+
+#header--navbar a:hover {
+  color: orange;
+}
+
+/* MAIN SECTION */
+
+/* Showcase */
+
+#showcase {
+  min-height: 400px;
+  background: url("../resources/laptop-bg.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: black;
+}
+
+#showcase .container {
+  min-height: 400px;
+  width: 750px;
+  margin-left: 15%;
+}
+
+#showcase .container h2 {
+  margin-top: 100px;
+  margin-right: 450px;
+  margin-left: 10px;
+  font-size: 55px;
+}
+
+#showcase .container p {
+  margin-right: 450px;
+  font-size: 18px;
+}
+
+#showcase .highlight:nth-of-type(1) {
+  color: rgb(255, 102, 0);
+}
+
+#showcase .highlight:nth-of-type(2) {
+  color: rgb(23, 138, 247);
+}
+
+/* Topics */
+
+#topics .container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  gap: 50px;
+}
+
+#topics img {
+  min-width: 200px;
+}
+
+.topics--topic {
+  display: flex;
+  height: 200px;
+  width: auto;
+}
+
+.topics--topic:nth-of-type(1) {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 102, 0, 0.753) 97%,
+    rgba(255, 102, 0, 1) 100%
+  );
+}
+
+.topics--topic:nth-of-type(2) {
+  flex-direction: row-reverse;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(23, 138, 247, 0.753) 97%,
+    rgba(23, 138, 247, 1) 100%
+  );
+}
+
+.topic--text {
+  width: 55%;
+  margin-bottom: 200px;
+}
+
+.topics--topic:last-child {
+  text-align: right;
+}
+
+/* FOOTER SECTION */
+
+footer #newsletter .container {
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 25px 0;
+}
+
+footer form {
+  margin-bottom: 15px;
+}
+
+footer input {
+  width: 250px;
+}
+
+footer button {
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+footer button:active {
+  background-color: rgb(161, 105, 0);
+}
+
+footer #copyright-name {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+}

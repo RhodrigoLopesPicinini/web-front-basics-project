@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Front Basics | HTML</title>
+    <meta
+      name="description"
+      content="Web page about HTML and web development."
+    />
+    <meta name="author" content="Rhodrigo Picinini" />
+    <meta name="keywords" content="HTML, web, development, language, markup" />
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.ico" />
+    <link rel="stylesheet" href="../css/style-html.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- Logo/Web Site Title -->
+        <div id="logo-title">
+          <h1>
+            <a href="./index.html"
+              >Web Front <span class="highlight">Basics</span></a
+            >
+          </h1>
+        </div>
+
+        <!-- Navbar -->
+        <nav id="header--navbar">
+          <!-- Right Navbar part -->
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about-html.html">About HTML</a></li>
+            <li><a href="./about-css.html">About CSS</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="upper-background">
+      <main>
+        <div class="container">
+          <section id="html-history">
+            <h2>HTML History</h2>
+            <p>
+              HTML was created by Sir Tim Berners-Lee in late 1991 but was not
+              officially released. It was published in 1995 as HTML 2.0. HTML
+              4.01 was published in late 1999 and was a major version of HTML.
+            </p>
+            <ul>
+              <li>
+                HTML 1.0 was released in 1993 with the intention of sharing
+                information that can be readable and accessible via web
+                browsers. But not many of the developers were involved in
+                creating websites. So the language was also not growing.
+              </li>
+              <li>
+                Then comes HTML 2.0, published in 1995, which contains all the
+                features of HTML 1.0 along with a few additional features, which
+                remained the standard markup language for designing and creating
+                websites until January 1997 and refined various core features of
+                HTML.
+              </li>
+              <li>
+                Then comes HTML 3.0, where Dave Raggett introduced a fresh paper
+                or draft on HTML. It included improved new features of HTML,
+                giving more powerful characteristics for webmasters in designing
+                web pages. But these powerful features of the new HTML slowed
+                down the browser in applying further improvements.
+              </li>
+              <li>
+                Then comes HTML 4.01, which is widely used and was a successful
+                version of HTML before HTML 5.0, which is currently released and
+                used worldwide. HTML 5 can be said for an extended version of
+                HTML 4.01, which was published in the year 2012.
+              </li>
+            </ul>
+          </section>
+          <section class="html-description">
+            <h2>More about HyperText Markup Language</h2>
+            <p>
+              HTML (HyperText Markup Language) is the most basic building block
+              of the Web. It defines the meaning and structure of web content.
+              Other technologies besides HTML are generally used to describe a
+              web page's appearance/presentation (<abbr
+                title="Cascading Style Sheets"
+                >CSS</abbr
+              >) or functionality/behavior (JavaScript).
+            </p>
+            <p>
+              "Hypertext" refers to links that connect web pages to one another,
+              either within a single website or between websites. Links are a
+              fundamental aspect of the Web. By uploading content to the
+              Internet and linking it to pages created by other people, you
+              become an active participant in the World Wide Web.
+            </p>
+            <p>
+              HTML uses "markup" to annotate text, images, and other content for
+              display in a Web browser. HTML markup includes special "elements"
+              such as &lt;head&gt;, &lt;title&gt;, &lt;body&gt;, &lt;header&gt;,
+              &lt;footer&gt;, &lt;article&gt;, &lt;section&gt;, &lt;p&gt;,
+              &lt;div&gt;, &lt;span&gt;, &lt;img&gt;, &lt;aside&gt;,
+              &lt;audio&gt;, &lt;canvas&gt;, &lt;datalist&gt;, &lt;details&gt;,
+              &lt;embed&gt;, &lt;nav&gt;, &lt;output&gt;, &lt;progress&gt;,
+              &lt;video&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt; and many others.
+            </p>
+            <p>Here we can see a basic HTML file structure:</p>
+            <div class="code-snippet">
+              <code>
+                &lt;!DOCTYPE html&gt; &lt;html lang="en"&gt; &lt;head&gt;
+                &lt;meta charset="UTF-8" /&gt; &lt;meta name="viewport"
+                content="width=device-width, initial-scale=1.0" /&gt;
+                &lt;title&gt; Web Front Basics | HTML &lt;/title&gt;
+                &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt;
+              </code>
+            </div>
+          </section>
+        </div>
+
+        <div class="container">
+          <div class="images">
+            <figure>
+              <img
+                id="img1"
+                src="../resources/html-syntax.png"
+                alt="image about the basic html tag syntax"
+              />
+              <figcaption>
+                Basic HTML5 Tag Syntax; Source:
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics"
+                  >MDN - HTML basics</a
+                >
+              </figcaption>
+            </figure>
+            <figure>
+              <img
+                id="img2"
+                src="../resources/html5-logo.png"
+                alt="image showing the logo of HTML5"
+              />
+              <figcaption>HTML5 Detailed Logo</figcaption>
+            </figure>
+          </div>
+          <div class="video-showcase">
+            <iframe
+              src="https://www.youtube.com/embed/ok-plXXHlWw"
+              title="Fireship video about HTML"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <a href="#logo-title">Back to top</a>
+      <div class="container">
+        <section id="newsletter">
+          <div class="container">
+            <h2>Subscribe to our Newsletter!</h2>
+            <form>
+              <input type="email" placeholder="Enter Your Email" required />
+            </form>
+            <button type="submit">Subscribe</button>
+          </div>
+        </section>
+
+        <!-- Copyright -->
+        <p id="copyright-name">&copy; Rhodrigo L. Picinini</p>
+      </div>
+    </footer>
+  </body>
+</html>

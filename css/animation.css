@@ -1,0 +1,39 @@
+.anim-parent {
+  border: 1px solid;
+  background-color: rgb(202, 202, 202);
+  overflow: hidden;
+  width: 50vw;
+  height: 50vh;
+  margin: auto;
+}
+
+.anim-child {
+  animation: dvd-bounceX 5s infinite alternate linear;
+}
+
+.anim-child img {
+  animation: dvd-bounceY 3s infinite alternate linear;
+}
+
+.anim-child img {
+  width: 150px;
+  height: 100px;
+}
+
+@keyframes dvd-bounceX {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(50vw - 150px));
+  }
+}
+
+@keyframes dvd-bounceY {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(calc(50vh - 100px));
+  }
+}
